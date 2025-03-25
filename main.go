@@ -52,6 +52,14 @@ func run() error {
 	return nil
 }
 
+// create handlers
+func makeMuxRouter() http.Handler {
+	muxRouter := mux.NewRouter()
+	muxRouter.HandleFunc("/", handleGetBlockchain).Methods("GET")
+	muxRouter.HandleFunc("/", handleWriteBlock).Methods("POST")
+	return muxRouter
+}
+
 // make sure block is valid by checking index, and comparing the hash of the previous block
 func isBlockValid(newBlock, oldBlock Block) bool {
 	if oldBlock.Index+1 != newBlock.Index {
