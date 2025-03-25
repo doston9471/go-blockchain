@@ -18,6 +18,10 @@ For example:
 
 Send as many requests as you like and refresh your browser to see your blocks grow! Use your actual heart rate (Beats Per Minute) to track it over time.
 
+## Result
+
+<img width="1502" alt="result-screenshot" src="https://github.com/user-attachments/assets/7cea9db4-e0ad-4e5d-b4c8-69e0871e159d" />
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
